@@ -1,0 +1,2764 @@
+<!DOCTYPE html> The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly. It must only appear once, at the top of the page (before any HTML tags).
+				The <!DOCTYPE> declaration is not case sensitive.
+				The <!DOCTYPE> declaration for HTML5 is:
+<html  lang="en-US"> Defines the root of an HTML document
+		<head>
+			<title>Page Title</title>
+		</head>
+		<body style="background-color:powderblue;"> Defines the document's body
+
+			<h1>This is a Heading</h1> ====> <h1> defines the most important heading. <h6> defines the least important heading: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			p tag 
+			
+			<p style="color:red;" title="tooltip text" style="font-size:60px" dir="rtl">This is a paragraph.</p> ====> HTML paragraphs are defined with the <p> tag
+
+			<b> - Bold text
+				The HTML <b> element defines bold text, without any extra importance.
+					<b>This text is bold</b>
+
+
+			<strong> - Important text
+				The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold.
+					<strong>This text is important!</strong>
+
+
+			<i> - Italic text
+				The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+				Tip: The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
+					<i>This text is italic</i>
+
+
+			<em> - Emphasized text]
+				The HTML <em> element defines emphasized text. The content inside is typically displayed in italic.
+				Tip: A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
+					<em>This text is emphasized</em>
+
+
+			<mark> - Marked text
+				The HTML <mark> element defines text that should be marked or highlighted
+					<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+
+			<small> - Smaller text
+				The HTML <small> element defines smaller text
+					<small>This is some smaller text.</small>
+				</small>
+
+
+			<del> - Deleted text
+				The HTML <del> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text:
+					<p>My favorite color is <del>blue</del> red.</p>
+
+
+			<ins> - Inserted text
+				The HTML <ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text
+					<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+
+			<sub> - Subscript text
+				The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O
+					<p>This is <sub>subscripted</sub> text.</p>
+
+
+			<sup> - Superscript text
+				The HTML <sup> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1].
+					<p>This is <sup>superscripted</sup> text.</p>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			
+			Empty HTML Elements
+			HTML elements with no content are called empty elements.
+			The <br> tag defines a line break, and is an empty element without a closing tag
+			<br> br tag is used for spaceing (like enter in the word) 
+			The HTML <br> element defines a line break.
+			Use <br> if you want a line break (a new line) without starting a new paragraph
+
+			<hr> The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+			The <hr> element is used to separate content (or define a change) in an HTML page
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			
+			HTML Links
+
+			Links are found in nearly all web pages. Links allow users to click their way from page to page.
+
+			HTML Links - Hyperlinks
+			HTML links are hyperlinks.
+			You can click on a link and jump to another document.
+			When you move the mouse over a link, the mouse arrow will turn into a little hand.
+			Note: A link does not have to be text. A link can be an image or any other HTML element!
+
+
+			HTML Links - Syntax
+			The HTML <a> tag defines a hyperlink. It has the following syntax
+				<a href="url">link text</a>
+
+
+			The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+			The link text is the part that will be visible to the reader.
+			Clicking on the link text, will send the reader to the specified URL address.
+
+				This example shows how to create a link to W3Schools.com:
+				<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+
+				By default, links will appear as follows in all browsers:
+				An unvisited link is underlined and blue
+				A visited link is underlined and purple
+				An active link is underlined and red
+
+				HTML Links - The target Attribute
+				By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+
+				The target attribute specifies where to open the linked document.
+
+				The target attribute can have one of the following values:
+
+				_self - Default. Opens the document in the same window/tab as it was clicked
+				_blank - Opens the document in a new window or tab
+				_parent - Opens the document in the parent frame
+				_top - Opens the document in the full body of the window
+
+
+				Use target="_blank" to open the linked document in a new browser window or tab:
+				<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+				Absolute URLs vs. Relative URLs
+				Both examples above are using an absolute URL (a full web address) in the href attribute.
+				A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):
+
+
+				<h2>Absolute URLs</h2>
+				<p><a href="https://www.w3.org/">W3C</a></p>
+				<p><a href="https://www.google.com/">Google</a></p>
+
+				<h2>Relative URLs</h2>
+				<p><a href="html_images.asp">HTML Images</a></p>
+				<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+
+				HTML Links - Use an Image as a Link
+				To use an image as a link, just put the <img> tag inside the <a> tag:
+
+				<a href="default.asp">
+				<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+				</a>
+
+
+				Link to an Email Address
+				Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):
+				<a href="mailto:someone@example.com">Send email</a>
+
+				Button as a Link
+				To use an HTML button as a link, you have to add some JavaScript code.
+				JavaScript allows you to specify what happens at certain events, such as a click of a button
+				<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+
+				Link Titles
+				The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.
+				<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+
+				More on Absolute URLs and Relative URLs
+
+				Use a full URL to link to a web page: 
+				<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+
+
+				Link to a page located in the html folder on the current web site: 
+				<a href="/html/default.asp">HTML tutorial</a>
+
+				Link to a page located in the same folder as the current page: 
+				<a href="default.asp">HTML tutorial</a>
+
+				
+				link color 
+				An HTML link is displayed in a different color depending on whether it has been visited, is unvisited, or is active.
+				HTML Link Colors
+				By default, a link will appear like this (in all browsers):
+				An unvisited link is underlined and blue
+				A visited link is underlined and purple
+				An active link is underlined and red
+
+				Example
+				Here, an unvisited link will be green with no underline. A visited link will be pink with no underline. An active link will be yellow and underlined. In addition, when mousing over a link (a:hover) it will become red and underlined:
+
+				<style>
+					a:link {
+					  color: green;
+					  background-color: transparent;
+					  text-decoration: none;
+					}
+
+					a:visited {
+					  color: pink;
+					  background-color: transparent;
+					  text-decoration: none;
+					}
+
+					a:hover {
+					  color: red;
+					  background-color: transparent;
+					  text-decoration: underline;
+					}
+
+					a:active {
+					  color: yellow;
+					  background-color: transparent;
+					  text-decoration: underline;
+					}
+				</style>
+
+
+				Link Buttons
+				A link can also be styled as a button, by using CSS:
+
+				<style>
+					a:link, a:visited {
+					  background-color: #f44336;
+					  color: white;
+					  padding: 15px 25px;
+					  text-align: center;
+					  text-decoration: none;
+					  display: inline-block;
+					}
+
+					a:hover, a:active {
+					  background-color: red;
+					}
+				</style>
+
+
+
+				HTML Links - Create Bookmarks
+				HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.
+				
+				Create a Bookmark in HTML
+				Bookmarks can be useful if a web page is very long.
+				To create a bookmark - first create the bookmark, then add a link to it.
+				When the link is clicked, the page will scroll down or up to the location with the bookmark.
+
+				Example
+				First, use the id attribute to create a bookmark:
+
+				<h2 id="C4">Chapter 4</h2>
+				Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
+				<a href="#C4">Jump to Chapter 4</a>
+				You can also add a link to a bookmark on another page:]
+				<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+				Use the id attribute (id="value") to define bookmarks in a page
+				Use the href attribute (href="#value") to link to the bookmark
+
+
+
+
+
+
+			<a href="https://www.w3schools.com">This is a link</a> ====> HTML links are defined with the <a> tag The link's destination is specified in the href attribute. Attributes are used to provide additional information about HTML elements.You will learn more about attributes in a later chapter.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			HTML Images Syntax
+			The HTML <img> tag is used to embed an image in a web page.
+			Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+			The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+			The <img> tag has two required attributes:
+
+			src - Specifies the path to the image
+			alt - Specifies an alternate text for the image
+
+			<img src="url" alt="alternatetext">
+
+			The src Attribute
+			The required src attribute specifies the path (URL) to the image.\
+			Note: When a web page loads; it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.
+
+			The alt Attribute
+			The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+			The value of the alt attribute should describe the image:
+			If a browser cannot find an image, it will display the value of the alt attribute:
+
+			Image Size - Width and Height
+			You can use the style attribute to specify the width and height of an image.
+			<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+			Alternatively, you can use the width and height attributes:
+			<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+			The width and height attributes always define the width and height of the image in pixels.
+
+			Width and Height, or Style?
+			The width, height, and style attributes are all valid in HTML.
+			However, we suggest using the style attribute. It prevents styles sheets from changing the size of images:
+
+			<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+			<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+			Images in Another Folder
+			If you have your images in a sub-folder, you must include the folder name in the src attribute:
+			<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+
+			Images on Another Server/Website
+			Some web sites point to an image on another server.
+			To point to an image on another server, you must specify an absolute (full) URL in the src attribute:
+			<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+			Animated Images
+			HTML allows animated GIFs:
+			<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+
+			Image as a Link
+			To use an image as a link, put the <img> tag inside the <a> tag:
+			<a href="default.asp">
+			<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+			</a>
+
+			Image Floating
+			Use the CSS float property to let the image float to the right or to the left of a text:
+
+			<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+			The image will float to the right of the text.</p>
+
+			<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+			The image will float to the left of the text.</p>
+
+			Common Image Formats
+			Here are the most common image file types, which are supported in all browsers (Chrome, Edge, Firefox, Safari, Opera):
+
+			APNG	Animated Portable Network Graphics   	.apng
+			GIF	    Graphics Interchange Format	            .gif
+			ICO	    Microsoft Icon	                        .ico, .cur
+			JPEG	Joint Photographic Expert Group image	.jpg, .jpeg, .jfif, .pjpeg, .pjp
+			PNG	    Portable Network Graphics	            .png
+			SVG	    Scalable Vector Graphics	            .svg
+
+
+			HTML Image Maps
+			With HTML image maps, you can create clickable areas on an image.
+			Image Maps
+			The HTML <map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags.
+			Try to click on the computer, phone, or the cup of coffee in the image below:
+
+			<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+			<map name="workmap">
+  				<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  				<area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  				<area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+			</map>
+
+			How Does it Work?
+			The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.
+			To create an image map you need an image, and some HTML code that describes the clickable areas.
+
+			The Image
+			The image is inserted using the <img> tag. The only difference from other images is that you must add a usemap attribute:
+			<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+			The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map.
+
+			Create Image Map
+			Then, add a <map> element.
+			The <map> element is used to create an image map, and is linked to the image by using the required name attribute:
+			<map name="workmap">
+			The name attribute must have the same value as the <img>'s usemap attribute .
+
+			The Areas
+			Then, add the clickable areas.
+
+			A clickable area is defined using an <area> element.
+
+			Shape
+			You must define the shape of the clickable area, and you can choose one of these values:
+
+			rect - defines a rectangular region
+			circle - defines a circular region
+			poly - defines a polygonal region
+			default - defines the entire region
+			You must also define some coordinates to be able to place the clickable area onto the image.
+
+			Shape="rect"
+			The coordinates for shape="rect" come in pairs, one for the x-axis and one for the y-axis.
+			So, the coordinates 34,44 is located 34 pixels from the left margin and 44 pixels from the top:
+			The coordinates 270,350 is located 270 pixels from the left margin and 350 pixels from the top:
+			Now we have enough data to create a clickable rectangular area:
+			<area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+			This is the area that becomes clickable and will send the user to the page "computer.htm":
+
+
+			Shape="circle"
+			To add a circle area, first locate the coordinates of the center of the circle:
+			337,300
+			Then specify the radius of the circle:
+			44 pixels
+			Now you have enough data to create a clickable circular area:
+			<area shape="circle" coords="337, 300, 44" href="coffee.htm">
+			This is the area that becomes clickable and will send the user to the page "coffee.htm":
+
+
+			Shape="poly"
+			The shape="poly" contains several coordinate points, which creates a shape formed with straight lines (a polygon).
+			This can be used to create any shape.
+			Like maybe a croissant shape!
+			How can we make the croissant in the image below become a clickable link?
+			We have to find the x and y coordinates for all edges of the croissant:
+			The coordinates come in pairs, one for the x-axis and one for the y-axis:
+			<area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+			This is the area that becomes clickable and will send the user to the page "croissant.htm":
+
+			Image Map and JavaScript
+			A clickable area can also trigger a JavaScript function.
+			Add a click event to the <area> element to execute a JavaScript function:
+
+			Example
+			Here, we use the onclick attribute to execute a JavaScript function when the area is clicked:
+			<map name="workmap">
+  			<area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+			</map>
+
+			<script>
+				function myFunction() {
+  				alert("You clicked the coffee cup!");
+				}
+			</script>
+
+
+
+			HTML Background Images
+			A background image can be specified for almost any HTML element.
+			Background Image on a HTML element
+			To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property:
+			Example
+			Add a background image on a HTML element:
+			<div style="background-image: url('img_girl.jpg');">
+			You can also specify the background image in the <style> element, in the <head> section:
+			Example
+			Specify the background image in the <style> element:
+
+			<style>
+				div {
+  				background-image: url('img_girl.jpg');
+				}
+			</style>
+
+
+			Background Image on a Page
+			If you want the entire page to have a background image, you must specify the background image on the <body> element:
+			Example
+			Add a background image for the entire page:
+			<style>
+			body {
+  				background-image: url('img_girl.jpg');
+				}
+			</style>
+
+
+
+			Background Repeat
+			If the background image is smaller than the element, the image will repeat itself, horizontally and vertically, until it reaches the end of the element:
+			Example
+			<style>
+				body {
+  					background-image: url('example_img_girl.jpg');
+					}
+			</style>
+			To avoid the background image from repeating itself, set the background-repeat property to no-repeat.
+			<style>
+				body {
+				  background-image: url('example_img_girl.jpg');
+				  background-repeat: no-repeat;
+				}
+			</style>
+
+
+
+			Background Cover
+			If you want the background image to cover the entire element, you can set the background-size property to cover.
+			Also, to make sure the entire element is always covered, set the background-attachment property to fixed:
+			This way, the background image will cover the entire element, with no stretching (the image will keep its original proportions):
+			Example
+			<style>
+			body {
+			  background-image: url('img_girl.jpg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			}
+			</style>
+
+
+			Background Stretch
+			If you want the background image to stretch to fit the entire element, you can set the background-size property to 100% 100%:
+			Try resizing the browser window, and you will see that the image will stretch, but always cover the entire element.
+			Example
+			<style>
+			body {
+			  background-image: url('img_girl.jpg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: 100% 100%;
+			}
+			</style>
+
+
+			
+			HTML <picture> Element
+			The HTML <picture> element allows you to display different pictures for different devices or screen sizes.
+			The HTML <picture> element gives web developers more flexibility in specifying image resources.
+			The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
+			Each <source> element has a media attribute that defines when the image is the most suitable.
+			Example
+			Show different images for different screen sizes:
+
+			<picture>
+			  <source media="(min-width: 650px)" srcset="img_food.jpg">
+			  <source media="(min-width: 465px)" srcset="img_car.jpg">
+			  <img src="img_girl.jpg">
+			</picture>
+			
+			When to use the Picture Element
+			There are two main purposes for the <picture> element:
+
+			1. Bandwidth
+			If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first <source> element with matching attribute values, and ignore any of the following elements.
+
+			2. Format Support
+			Some browsers or devices may not support all image formats. By using the <picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements.
+
+			Example
+			The browser will use the first image format it recognizes:
+
+			<picture>
+			  <source srcset="img_avatar.png">
+			  <source srcset="img_girl.jpg">
+			  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+			</picture>
+
+
+
+			<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142" alt="alternate text for an image" title="tooltip text"> =====> HTML images are defined with the <img> tag.The source file (src), alternative text (alt), width, and height are provided as attributes
+
+			There are two ways to specify the URL in the src attribute:
+				1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+					Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+
+				2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
+
+					Tip: It is almost always best to use relative URLs. They will not break if you change domain.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		
+		The Poem Problem
+
+		The HTML <pre> element defines preformatted text.
+		The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+		style 
+
+		The HTML style attribute is used to add styles to an element, such as color, font, size, and more.
+		<p style="property:value;"></p>
+		The property is a CSS property. The value is a CSS value.
+
+		Background Color
+		The CSS background-color property defines the background color for an HTML element.
+		<h1 style="background-color:powderblue;">This is a heading</h1>
+
+		Text Color
+		The CSS color property defines the text color for an HTML element.
+		<h1 style="color:blue;">This is a heading</h1>
+
+		Fonts
+		The CSS font-family property defines the font to be used for an HTML elemen.
+		<h1 style="font-family:verdana;">This is a heading</h1>
+
+		Text Size
+		The CSS font-size property defines the text size for an HTML elemen.
+		<h1 style="font-size:300%;">This is a heading</h1>
+
+		Text Alignment
+		The CSS text-align property defines the horizontal text alignment for an HTML elemen.
+		<h1 style="text-align:center;">Centered Heading</h1>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		HTML Quotation and Citation Elements
+
+		HTML <blockquote> for Quotations
+		The HTML <blockquote> element defines a section that is quoted from another source.
+		Browsers usually indent <blockquote> elements.
+
+			<p>Here is a quote from WWF's website:</p>
+			<blockquote cite="http://www.worldwildlife.org/who/index.html">
+			For 50 years, WWF has been protecting the future of nature.
+			The world's leading conservation organization,
+			WWF works in 100 countries and is supported by
+			1.2 million members in the United States and
+			close to 5 million globally.
+			</blockquote>
+
+
+			HTML <q> for Short Quotations
+			The HTML <q> tag defines a short quotation.
+			Browsers normally insert quotation marks around the quotation.
+			<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+
+
+			HTML <abbr> for Abbreviations
+			The HTML <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+			Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+			Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.
+			<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+
+
+			HTML <address> for Contact Information
+			The HTML <address> tag defines the contact information for the author/owner of a document or an article.
+			The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+			The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+				<address>
+				Written by John Doe.<br>
+				Visit us at:<br>
+				Example.com<br>
+				Box 564, Disneyland<br>
+				USA
+				</address>
+
+
+
+			HTML <cite> for Work Title
+			The HTML <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+			Note: A person's name is not the title of a work.
+			The text in the <cite> element usually renders in italic.
+				<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+
+
+			HTML <bdo> for Bi-Directional Override
+			BDO stands for Bi-Directional Override.
+			The HTML <bdo> tag is used to override the current text direction.
+				<bdo dir="rtl">This text will be written from right to left</bdo>
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			
+			HTML Comment Tags
+			You can add comments to your HTML source by using the following syntax
+				<!-- Write your comments here -->
+				<!-- This is a comment -->
+				<p>This is a paragraph.</p>
+				<!-- Remember to add more information here -->
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			HTML Colors
+			HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.
+
+			Color Names
+			In HTML, a color can be specified by using a color name:
+
+			Tomato
+			Orange
+			DodgerBlue
+			MediumSeaGreen
+			Gray
+			SlateBlue
+			Violet
+			LightGray
+
+			Background Color
+			You can set the background color for HTML elements:
+			<h1 style="background-color:DodgerBlue;">Hello World</h1>
+			<p style="background-color:Tomato;">Lorem ipsum...</p>
+
+			Text Color
+			You can set the color of text:
+			<h1 style="color:Tomato;">Hello World</h1>
+			<p style="color:DodgerBlue;">Lorem ipsum...</p>
+			<p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+
+			Border Color
+			You can set the color of borders:
+			<h1 style="border:2px solid Tomato;">Hello World</h1>
+			<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+			<h1 style="border:2px solid Violet;">Hello World</h1>
+
+			Color Values
+			In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.
+			The following three <div> elements have their background color set with RGB, HEX, and HSL values
+				rgb(255, 99, 71)
+				#ff6347
+				hsl(9, 100%, 64%)
+				rgba(255, 99, 71, 0.5)
+				hsla(9, 100%, 64%, 0.5)
+
+				he following two <div> elements have their background color set with RGBA and HSLA values, which adds an Alpha channel to the color (here we have 50% transparency):
+				<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+				<h1 style="background-color:#ff6347;">...</h1>
+				<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+				<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+				<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+
+				HTML RGB and RGBA Colors
+				An RGB color value represents RED, GREEN, and BLUE light sources.
+				An RGBA color value is an extension of RGB with an Alpha channel (opacity).
+				RGB Color Values
+				In HTML, a color can be specified as an RGB value, using this formula:
+				rgb(red, green, blue)
+				Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+				This means that there are 256 x 256 x 256 = 16777216 possible colors!
+				For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255), and the other two (green and blue) are set to 0.
+				Another example, rgb(0, 255, 0) is displayed as green, because green is set to its highest value (255), and the other two (red and blue) are set to 0.
+				To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+				To display white, set all color parameters to 255, like this: rgb(255, 255, 255).
+				Experiment by mixing the RGB values below:
+				
+				
+
+				RGBA Color Values
+				RGBA color values are an extension of RGB color values with an Alpha channel - which specifies the opacity for a color.
+				An RGBA color value is specified with:
+				rgba(red, green, blue, alpha)
+				The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+				Experiment by mixing the RGBA values below:
+
+
+
+				HTML HEX Colors
+				A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.
+				HEX Color Values
+				In HTML, a color can be specified using a hexadecimal value in the form:
+				#rrggbb
+				Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+				For example, #ff0000 is displayed as red, because red is set to its highest value (ff), and the other two (green and blue) are set to 00.
+				Another example, #00ff00 is displayed as green, because green is set to its highest value (ff), and the other two (red and blue) are set to 00.
+				To display black, set all color parameters to 00, like this: #000000.
+				To display white, set all color parameters to ff, like this: #ffffff.
+				Experiment by mixing the HEX values below:
+
+
+
+				HTML HSL and HSLA Colors
+				HSL stands for hue, saturation, and lightness.
+				HSLA color values are an extension of HSL with an Alpha channel (opacity).
+				HSL Color Values
+				In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:
+				hsl(hue, saturation, lightness)
+				Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+				Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+				Lightness is also a percentage value, 0% is black, and 100% is white.
+				Experiment by mixing the HSL values below:
+
+				Saturation
+				Saturation can be described as the intensity of a color.
+				100% is pure color, no shades of gray
+				50% is 50% gray, but you can still see the color.
+				0% is completely gray, you can no longer see the color.
+
+
+				Lightness
+				The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light) 100% means full lightness (white).
+
+				HSLA Color Values
+				HSLA color values are an extension of HSL color values with an Alpha channel - which specifies the opacity for a color.
+				An HSLA color value is specified with:
+				hsla(hue, saturation, lightness, alpha)
+				The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+				Experiment by mixing the HSLA values below:
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+				HTML Styles - CSS
+				CSS stands for Cascading Style Sheets.
+				CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+				
+				What is CSS?
+				Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+				With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!
+				Tip: The word cascading means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)!
+
+
+				Using CSS
+				CSS can be added to HTML documents in 3 ways:
+				Inline - by using the style attribute inside HTML elements
+				Internal - by using a <style> element in the <head> section
+				External - by using a <link> element to link to an external CSS file
+				The most common way to add CSS, is to keep the styles in external CSS files. However, in this tutorial we will use inline and internal styles, because this is easier to demonstrate, and easier for you to try it yourself.
+
+
+				Inline CSS
+				An inline CSS is used to apply a unique style to a single HTML element.
+				An inline CSS uses the style attribute of an HTML element.
+				The following example sets the text color of the <h1> element to blue, and the text color of the <p> element to red:
+					<h1 style="color:blue;">A Blue Heading</h1>
+
+
+				Internal CSS
+				An internal CSS is used to define a style for a single HTML page.
+				An internal CSS is defined in the <head> section of an HTML page, within a <style> element.
+				The following example sets the text color of ALL the <h1> elements (on that page) to blue, and the text color of ALL the <p> elements to red. In addition, the page will be displayed with a "powderblue" background color: 
+
+					<style>
+					body {background-color: powderblue;}
+					h1   {color: blue;}
+					p    {color: red;}
+					</style>
+
+
+				External CSS
+				An external style sheet is used to define the style for many HTML pages.
+				To use an external style sheet, add a link to it in the <head> section of each HTML page:
+				<head>
+					<link rel="stylesheet" href="styles.css">
+				</head>
+
+				The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.
+				Here is what the "styles.css" file looks like:
+
+				"styles.css":
+				body {
+				  background-color: powderblue;
+				}
+				h1 {
+				  color: blue;
+				}
+				p {
+				  color: red;
+				}
+
+
+
+				CSS Colors, Fonts and Sizes
+				Here, we will demonstrate some commonly used CSS properties. You will learn more about them later.
+				The CSS color property defines the text color to be used.
+				The CSS font-family property defines the font to be used.
+				The CSS font-size property defines the text size to be used.
+
+
+				<style>
+				h1 {
+				  color: blue;
+				  font-family: verdana;
+				  font-size: 300%;
+				}
+				p {
+				  color: red;
+				  font-family: courier;
+				  font-size: 160%;
+				}
+				</style>
+
+
+				CSS Border
+				The CSS border property defines a border around an HTML element.
+				Tip: You can define a border for nearly all HTML elements.
+				<style>
+				p {
+  				border: 2px solid powderblue;
+				}
+
+				</style>
+
+
+				CSS Padding
+				The CSS padding property defines a padding (space) between the text and the border.
+
+				<style>
+
+				p {
+				  border: 2px solid powderblue;
+				  padding: 30px;
+				}
+
+				</style>
+
+
+				CSS Margin
+				The CSS margin property defines a margin (space) outside the border.
+				<style>
+
+					p {
+					  border: 2px solid powderblue;
+					  margin: 50px;
+					}
+
+				</style>
+
+				Link to External CSS
+				External style sheets can be referenced with a full URL or with a path relative to the current web page.
+
+				This example uses a full URL to link to a style sheet:
+				<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+
+				This example links to a style sheet located in the html folder on the current web site: 
+				<link rel="stylesheet" href="/html/styles.css">
+
+				This example links to a style sheet located in the same folder as the current page:
+				<link rel="stylesheet" href="styles.css">
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+				HTML Tables
+				HTML tables allow web developers to arrange data into rows and columns.
+				Define an HTML Table
+				The <table> tag defines an HTML table.
+				Each table row is defined with a <tr> tag. Each table header is defined with a <th> tag. Each table data/cell is defined with a <td> tag.
+				By default, the text in <th> elements are bold and centered.
+				By default, the text in <td> elements are regular and left-aligned.
+
+				Example
+				A simple HTML table:
+
+				<table style="width:100%">
+				  <tr>
+				    <th>Firstname</th>
+				    <th>Lastname</th>
+				    <th>Age</th>
+				  </tr>
+				  <tr>
+				    <td>Jill</td>
+				    <td>Smith</td>
+				    <td>50</td>
+				  </tr>
+				  <tr>
+				    <td>Eve</td>
+				    <td>Jackson</td>
+				    <td>94</td>
+				  </tr>
+				</table>
+
+				HTML Table - Add a Border
+				To add a border to a table, use the CSS border property:
+				<style>
+				table, th, td {
+ 					 border: 1px solid black;
+					}
+				</style>
+
+
+				HTML Table - Collapsed Borders
+				To let the borders collapse into one border, add the CSS border-collapse property:
+				<style>
+				table, th, td {
+ 				border: 1px solid black;
+  				border-collapse: collapse;
+				}
+				</style>
+
+
+				HTML Table - Add Cell Padding
+				Cell padding specifies the space between the cell content and its borders.
+				If you do not specify a padding, the table cells will be displayed without padding.
+				To set the padding, use the CSS padding property:
+				<style>
+					th, td {
+ 					 padding: 15px;
+					}
+				</style>
+
+
+				HTML Table - Left-align Headings
+				By default, table headings are bold and centered.
+				To left-align the table headings, use the CSS text-align property:
+				<style>
+					th {
+					  text-align: left;
+					}
+				</style>
+
+
+
+				HTML Table - Add Border Spacing
+				Border spacing specifies the space between the cells.
+				To set the border spacing for a table, use the CSS border-spacing property:
+				Example
+				<style>
+				table {
+  				border-spacing: 5px;
+				}
+				</style>
+
+				If the table has collapsed borders, border-spacing has no effect.
+
+
+
+
+				HTML Table - Cell that Spans Many Columns
+				To make a cell span more than one column, use the colspan attribute:
+				<table style="width:100%">
+					  <tr>
+					    <th>Name</th>
+					    <th colspan="2">Telephone</th>
+					  </tr>
+					  <tr>
+					    <td>Bill Gates</td>
+					    <td>55577854</td>
+					    <td>55577855</td>
+					  </tr>
+				</table>
+
+
+
+				HTML Table - Cell that Spans Many Rows
+				To make a cell span more than one row, use the rowspan attribute:
+				<table style="width:100%">
+				  <tr>
+				    <th>Name:</th>
+				    <td>Bill Gates</td>
+				  </tr>
+				  <tr>
+				    <th rowspan="2">Telephone:</th>
+				    <td>55577854</td>
+				  </tr>
+				  <tr>
+				    <td>55577855</td>
+				  </tr>
+				</table>
+
+
+
+				HTML Table - Add a Caption
+				To add a caption to a table, use the <caption> tag:
+					<table style="width:100%">
+					  <caption>Monthly savings</caption>
+					  <tr>
+					    <th>Month</th>
+					    <th>Savings</th>
+					  </tr>
+					  <tr>
+					    <td>January</td>
+					    <td>$100</td>
+					  </tr>
+					  <tr>
+					    <td>February</td>
+					    <td>$50</td>
+					  </tr>
+					</table>
+
+					The <caption> tag must be inserted immediately after the <table> tag.]
+
+
+
+
+
+				 A Special Style for One Table
+				 To define a special style for one particular table, add an id attribute to the table:
+				 <table id="t01">
+				  <tr>
+				    <th>Firstname</th>
+				    <th>Lastname</th>
+				    <th>Age</th>
+				  </tr>
+				  <tr>
+				    <td>Eve</td>
+				    <td>Jackson</td>
+				    <td>94</td>
+				  </tr>
+				</table>
+
+				<style>
+					#t01 {
+						 width: 100%;
+  						background-color: #f1f1c1;
+					}
+
+
+				adding more styles 
+				#t01 tr:nth-child(even) {
+  				background-color: #eee;
+				}
+				#t01 tr:nth-child(odd) {
+				  background-color: #fff;
+				}
+				#t01 th {
+				  color: white;
+				  background-color: black;
+				}
+				</style>
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+				HTML Lists
+				HTML lists allow web developers to group a set of related items in lists.
+
+				Unordered HTML List
+				An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+				The list items will be marked with bullets (small black circles) by default:
+				The HTML <ul> tag defines an unordered (bulleted) list.
+				An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+				The list items will be marked with bullets (small black circles) by default:
+
+				Unordered HTML List - Choose List Item Marker
+				The CSS list-style-type property is used to define the style of the list item marker. It can have one of the following values:
+				
+				Value  		Description
+				disc		Sets the list item marker to a bullet (default)
+				circle		Sets the list item marker to a circle
+				square		Sets the list item marker to a square
+				none		The list items will not be marked
+
+				<ul style="list-style-type:disc;">
+			 	<li>Coffee</li>
+			  	<li>Tea</li>
+			 	<li>Milk</li>
+				</ul>
+
+				Nested HTML Lists
+				Lists can be nested (list inside list):
+				Example
+				<ul>
+				  <li>Coffee</li>
+				  <li>Tea
+				    <ul>
+				      <li>Black tea</li>
+				      <li>Green tea</li>
+				    </ul>
+				  </li>
+				  <li>Milk</li>
+				</ul>
+				A list item (<li>) can contain a new list, and other HTML elements, like images and links, etc.
+
+
+
+				Horizontal List with CSS
+				HTML lists can be styled in many different ways with CSS.
+				One popular way is to style a list horizontally, to create a navigation menu:
+				<style>
+				ul {
+				  list-style-type: none;
+				  margin: 0;
+				  padding: 0;
+				  overflow: hidden;
+				  background-color: #333333;
+				}
+
+				li {
+				  float: left;
+				}
+
+				li a {
+				  display: block;
+				  color: white;
+				  text-align: center;
+				  padding: 16px;
+				  text-decoration: none;
+				}
+
+				li a:hover {
+				  background-color: #111111;
+				}
+				</style>
+				</head>
+				<body>
+
+				<ul>
+				  <li><a href="#home">Home</a></li>
+				  <li><a href="#news">News</a></li>
+				  <li><a href="#contact">Contact</a></li>
+				  <li><a href="#about">About</a></li>
+				</ul>
+
+
+
+
+				Ordered HTML List]
+				An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+				The list items will be marked with numbers by default:
+				The HTML <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.
+				Ordered HTML List
+				An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+				The list items will be marked with numbers by default:
+
+				Ordered HTML List - The Type Attribute
+				The type attribute of the <ol> tag, defines the type of the list item marker:
+
+				Type		Description
+				type="1"	The list items will be numbered with numbers (default)
+				type="A"	The list items will be numbered with uppercase letters
+				type="a"	The list items will be numbered with lowercase letters
+				type="I"	The list items will be numbered with uppercase roman numbers
+				type="i"	The list items will be numbered with lowercase roman numbers
+				
+				<ol type="A">
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+				</ol>
+
+				Control List Counting
+				By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the start attribute:
+				Example
+				<ol start="50">
+				  <li>Coffee</li>
+				  <li>Tea</li>
+				  <li>Milk</li>
+				</ol>
+
+				Nested HTML Lists
+				Lists can be nested (list inside list):
+				<ol>
+				  <li>Coffee</li>
+				  <li>Tea
+				    <ol>
+				      <li>Black tea</li>
+				      <li>Green tea</li>
+				    </ol>
+				  </li>
+				  <li>Milk</li>
+				</ol>
+				A list item (<li>) can contain a new list, and other HTML elements, like images and links, etc.
+
+
+				HTML Description Lists
+				HTML also supports description lists.
+				A description list is a list of terms, with a description of each term.
+				The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:
+
+				<dl>
+  				<dt>Coffee</dt>
+  				<dd>- black hot drink</dd>
+  				<dt>Milk</dt>
+ 				<dd>- white cold drink</dd>
+				</dl>
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+				Every HTML element has a default display value, depending on what type of element it is.
+				There are two display values: block and inline.
+				Block-level Elements
+				A block-level element always starts on a new line.
+				A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+				A block level element has a top and a bottom margin, whereas an inline element does not.
+
+				The <div> element is a block-level element.
+				<div>Hello World</div>
+
+				Here are the block-level elements in HTML:
+
+				<address>
+					sed in the past
+
+				<article>
+				Definition and Usage
+				The <article> tag specifies independent, self-contained content.
+				An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+				Potential sources for the <article> element:
+				Forum post
+				Blog post
+				News story
+				Note: The <article> element does not render as anything special in a browser. However, you can use CSS to style the <article> element (see example below).
+
+
+				<aside>
+				Definition and Usage
+				The <aside> tag defines some content aside from the content it is placed in.
+				The aside content should be indirectly related to the surrounding content.
+				Tip: The <aside> content is often placed as a sidebar in a document.
+				Note: The <aside> element does not render as anything special in a browser. However, you can use CSS to style the <aside> element (see example below).
+
+
+
+				<blockquote>
+				Definition and Usage
+				The <blockquote> tag specifies a section that is quoted from another source.
+				Browsers usually indent <blockquote> elements (look at example below to see how to remove the indentation).
+				Tips and Notes
+				Tip: Use <q> for inline (short) quotations.
+
+
+
+				<canvas>
+				Definition and Usage
+				The <canvas> tag is used to draw graphics, on the fly, via scripting (usually JavaScript).
+				The <canvas> tag is transparent, and is only a container for graphics, you must use a script to actually draw the graphics.
+				Any text inside the <canvas> element will be displayed in browsers with JavaScript disabled and in browsers that do not support <canvas>.
+				Tips and Notes
+				Tip: Learn more about the <canvas> element in our HTML Canvas Tutorial.
+				Tip: For a complete reference of all the properties and methods, please visit our HTML Canvas Reference.
+
+
+
+				<dd>
+				Definition and Usage
+				The <dd> tag is used to describe a term/name in a description list.
+				The <dd> tag is used in conjunction with <dl> (defines a description list) and <dt> (defines terms/names).
+				Inside a <dd> tag you can put paragraphs, line breaks, images, links, lists, etc.
+
+
+				<div>
+				<dl>
+					sed in the past
+
+
+
+				<dt>
+				Definition and Usage
+				The <dt> tag defines a term/name in a description list.
+				The <dt> tag is used in conjunction with <dl> (defines a description list) and <dd> (describes each term/name).
+
+
+
+				<fieldset>
+				Definition and Usage
+				The <fieldset> tag is used to group related elements in a form.
+				The <fieldset> tag draws a box around the related elements.
+
+
+
+				<figcaption>
+				Definition and Usage
+                The <figcaption> tag defines a caption for a <figure> element.
+				The <figcaption> element can be placed as the first or last child of the <figure> element.
+					"under picture info"
+
+
+
+				<figure>
+				Definition and Usage
+				The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+				While the content of the <figure> element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.
+				Tip: The <figcaption> element is used to add a caption for the <figure> element.
+
+
+
+				<footer>
+				Definition and Usage
+				The <footer> tag defines a footer for a document or section.
+
+				A <footer> element typically contains:
+
+				authorship information
+				copyright information
+				contact information
+				sitemap
+				back to top links
+				related documents
+				You can have several <footer> elements in one document.
+
+				Tips and Notes
+				Tip: Contact information inside a <footer> element should go inside an <address> tag.
+
+
+
+				<form>
+					well be talk about
+
+				<h1>-<h6>
+					sed in the pst
+
+
+				<header>
+				Definition and Usage
+				The <header> element represents a container for introductory content or a set of navigational links.
+
+				A <header> element typically contains:
+
+				one or more heading elements (<h1> - <h6>)
+				logo or icon
+				authorship information
+				Note: You can have several <header> elements in one HTML document. However, <header> cannot be placed within a <footer>, <address> or another <header> element.
+
+
+				<hr> 
+				sed in the past
+
+
+				<li>
+				sed in the past
+
+
+				<main>
+				Definition and Usage
+				The <main> tag specifies the main content of a document.
+
+				The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+
+				Note: There must not be more than one <main> element in a document. The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.
+
+
+				<nav>
+				Definition and Usage
+				The <nav> tag defines a set of navigation links.
+				Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links.
+				Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+
+
+
+				<noscript>
+				to show text if javascript is disabled 
+				Definition and Usage
+				The <noscript> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support script.
+				The <noscript> element can be used in both <head> and <body>. When used inside <head>, the <noscript> element could only contain <link>, <style>, and <meta> elements.
+
+
+
+
+				<ol>
+				sed in the past
+
+				<p>
+				sed in the past
+
+				<pre>
+				Definition and Usage
+				The <pre> tag defines preformatted text.
+				Text in a <pre> element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. The text will be displayed exactly as written in the HTML source code.
+
+				<section>
+				Definition and Usage
+				The <section> tag defines a section in a document.
+				
+
+
+				<table>
+				sed in the past
+
+
+				<tfoot>
+				Definition and Usage
+				The <tfoot> tag is used to group footer content in an HTML table.
+
+				The <tfoot> element is used in conjunction with the <thead> and <tbody> elements to specify each part of a table (footer, header, body).
+
+				Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page.
+
+				Note: The <tfoot> element must have one or more <tr> tags inside.
+
+				The <tfoot> tag must be used in the following context: As a child of a <table> element, after any <caption>, <colgroup>, <thead>, and <tbody> elements.
+
+				Tip: The <thead>, <tbody>, and <tfoot> elements will not affect the layout of the table by default. However, you can use CSS to style these elements (see example below)!
+
+
+				<ul>
+				sed in the past
+
+
+				<video>
+				Definition and Usage
+				The <video> tag is used to embed video content in a document, such as a movie clip or other video streams.
+				The <video> tag contains one or more <source> tags with different video sources. The browser will choose the first source it supports.
+				The text between the <video> and </video> tags will only be displayed in browsers that do not support the <video> element.
+				There are three supported video formats in HTML: MP4, WebM, and OGG.
+
+
+				<audio>
+				The <audio> tag is used to embed sound content in a document, such as music or other audio streams.
+				The <audio> tag contains one or more <source> tags with different audio sources. The browser will choose the first source it supports.
+				The text between the <audio> and </audio> tags will only be displayed in browsers that do not support the <audio> element.
+				There are three supported audio formats in HTML: MP3, WAV, and OGG.
+
+
+				Inline Elements
+				An inline element does not start on a new line.
+				An inline element only takes up as much width as necessary.
+				This is a <span> element inside a paragraph.
+
+				<span>Hello World</span> this well draw a border around the text
+
+
+
+				<a> sed in the past
+
+
+
+				<abbr>
+				The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+				Definition and Usage
+				The <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+				Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.
+
+
+
+
+				<b>
+				<b>used to bold text</b>
+
+
+
+				<bdo>
+				<bdo dir="rtl">
+				This text will go right-to-left.
+				</bdo>
+				Definition and Usage
+				BDO stands for Bi-Directional Override.
+				The <bdo> tag is used to override the current text direction.
+
+
+
+
+
+				<br> sed in the past
+
+
+
+
+
+				<button>
+				<button type="button">Click Me!</button>
+				The <button> tag defines a clickable button.
+				Inside a <button> element you can put text (and tags like <i>, <b>, <strong>, <br>, <img>, etc.). That is not possible with a button created with the <input> element!
+				Tip: Always specify the type attribute for a <button> element, to tell browsers what type of button it is.
+				Tip: You can easily style buttons with CSS! Look at the examples below or visit our CSS Buttons tutorial.
+
+
+
+
+
+
+				<cite>
+				Definition and Usage
+				The <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+				Note: A person's name is not the title of a work.
+				The text in the <cite> element usually renders in italic.
+				<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+
+
+
+
+				<code>
+				used to show computer code
+				<p>The HTML <code>button</code> tag defines a clickable button.</p>
+				<p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+				Definition and Usage
+				The <code> tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.
+				Tip: This tag is not deprecated. However, it is possible to achieve richer effect by using CSS (see example below).
+
+
+
+
+
+
+				<dfn>
+				used for definition
+				Definition and Usage
+				The <dfn> tag stands for the "definition element", and it specifies a term that is going to be defined within the content.
+				The nearest parent of the <dfn> tag must also contain the definition/explanation for the term.
+
+
+
+
+
+
+
+				<em>
+				story telling
+				<p>You <em>have</em> to hurry up!</p>
+				<p>We <em>cannot</em> live like this.</p>
+				Definition and Usage
+				The <em> tag is used to define emphasized text. The content inside is typically displayed in italic.
+				A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
+
+
+
+
+
+
+				<i>
+				The <i> tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+				The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
+				Use the <i> element only when there is not a more appropriate semantic element, such as:
+				
+				<em> (emphasized text)
+				<strong> (important text)
+				<mark> (marked/highlighted text)
+				<cite> (the title of a work)
+				<dfn> (a definition term)
+
+
+
+
+				<img> sed in the past
+
+
+
+
+				<input>
+				<form action="/action_page.php">
+				  <label for="fname">First name:</label>
+				  <input type="text" id="fname" name="fname"><br><br>
+				  <label for="lname">Last name:</label>
+				  <input type="text" id="lname" name="lname"><br><br>
+				  <input type="submit" value="Submit">
+				</form>
+
+
+				Definition and Usage
+				The <input> tag specifies an input field where the user can enter data.
+				The <input> element is the most important form element.
+				The <input> element can be displayed in several ways, depending on the type attribute.
+				The different input types are as follows:
+
+				<input type="button">
+				<input type="checkbox">
+				<input type="color">
+				<input type="date">
+				<input type="datetime-local">
+				<input type="email">
+				<input type="file">
+				<input type="hidden">
+				<input type="image">
+				<input type="month">
+				<input type="number">
+				<input type="password">
+				<input type="radio">
+				<input type="range">
+				<input type="reset">
+				<input type="search">
+				<input type="submit">
+				<input type="tel">
+				<input type="text"> (default value)
+				<input type="time">
+				<input type="url">
+				<input type="week">
+				Look at the type attribute to see examples for each input type!
+
+
+
+				<select>
+
+				<form>
+				<label for="cars">Choose a car:</label>
+				<select name="cars" id="cars">
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="mercedes">Mercedes</option>
+				<option value="audi">Audi</option>
+				</select>
+				</form>
+
+
+
+
+
+
+				<label>
+				<form action="/action_page.php">
+				  <input type="radio" id="html" name="fav_language" value="HTML">
+				  <label for="html">HTML</label><br>
+				  <input type="radio" id="css" name="fav_language" value="CSS">
+				  <label for="css">CSS</label><br>
+				  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+				  <label for="javascript">JavaScript</label><br><br>
+				  <input type="submit" value="Submit">
+				</form>
+
+				Definition and Usage
+				The <label> tag defines a label for several elements
+
+
+
+
+				<output>
+				<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+				  <input type="range" id="a" value="50">
+				  +<input type="number" id="b" value="25">
+				  =<output name="x" for="a b"></output>
+				</form>
+
+				Definition and Usage
+				The <output> tag is used to represent the result of a calculation (like one performed by a script).
+				
+
+
+
+
+
+
+
+				<kbd>
+				<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+				<p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+
+				Definition and Usage
+				The <kbd> tag is used to define keyboard input. The content inside is displayed in the browser's default monospace font.
+				Tip: This tag is not deprecated. However, it is possible to achieve richer effect by using CSS (see example below).
+
+
+
+
+
+				<map> sed in the past
+
+
+
+
+
+
+				<object>
+				Definition and Usage
+				The <object> tag defines a container for an external resource.
+				The external resource can be a web page, a picture, a media player, or a plug-in application.
+
+
+				<object data="pic_trulli.jpg" width="300" height="200"></object>
+				<object data="snippet.html" width="500" height="200"></object>
+				<object data="video.mp4" width="400" height="300"></object>
+
+				To embed a picture, it is better to use the <img> tag.
+				To embed HTML, it is better to use the <iframe> tag.
+				To embed video or audio, it is better to use the <video> and <audio> tags.
+
+
+
+
+
+				<q>
+				Definition and Usage
+				The <q> tag defines a short quotation.
+				Browsers normally insert quotation marks around the quotation.
+
+
+
+
+				<samp>
+				<p>Message from my computer:</p>
+				<p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+				Definition and Usage
+				The <samp> tag is used to define sample output from a computer program. The content inside is displayed in the browser's default monospace font.
+				Tip: This tag is not deprecated. However, it is possible to achieve richer effect by using CSS.
+
+
+				<script>
+				<script>
+				document.getElementById("demo").innerHTML = "Hello JavaScript!";
+				</script>
+
+				Definition and Usage
+				The <script> tag is used to embed a client-side script (JavaScript).
+				The <script> element either contains scripting statements, or it points to an external script file through the src attribute.
+				Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.Tips and Notes
+				Tip: Also look at the <noscript> element for users that have disabled scripts in their browser, or have a browser that doesn't support client-side scripting.
+
+
+
+
+
+				<small>
+				smaller text
+
+
+
+
+
+				<span>
+				Definition and Usage
+				The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+				The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+				The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
+
+				<p>My mother has <span style="color:blue">blue</span> eyes.</p>
+
+
+
+
+
+				<strong>
+				<strong>This text is important!</strong>
+
+
+
+
+
+
+
+				<sub><sup> sed in the past
+
+
+
+
+
+
+				<textarea>
+				A multi-line text input control (text area):
+
+				Definition and Usage
+				The <textarea> tag defines a multi-line text input control.
+				The <textarea> element is often used in a form, to collect user inputs like comments or reviews.
+				A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
+				The size of a text area is specified by the <cols> and <rows> attributes (or with CSS).
+				The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the text area will be submitted).
+				The id attribute is needed to associate the text area with a label.
+
+				<label for="w3review">Review of W3Schools:</label>
+				<textarea id="w3review" name="w3review" rows="4" cols="50">
+				At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+				</textarea>
+
+
+
+
+
+				<time>
+				Definition and Usage
+				The <time> tag defines a specific time (or datetime).
+				The datetime attribute of this element is used translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar, and search engines can produce smarter search results.
+
+				<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+				<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+
+
+
+				<var>
+				Definition and Usage
+				The <var> tag is used to defines a variable in programming or in a mathematical expression. The content inside is typically displayed in italic.
+
+				<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+				<div>
+				The <div> element is often used as a container for other HTML elements.
+				The <div> element has no required attributes, but style, class and id are common.
+				When used together with CSS, the <div> element can be used to style blocks of content:
+
+				<div style="background-color:black;color:white;padding:20px;">
+  				<h2>London</h2>
+  				<p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+				</div>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+				Using The class Attribute
+
+				The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name
+				In the following example we have three <div> elements with a class attribute with the value of "city". All of the three <div> elements will be styled equally according to the .city style definition in the head section:
+
+				<style>
+				.city {
+				  background-color: tomato;
+				  color: white;
+				  border: 2px solid black;
+				  margin: 20px;
+				  padding: 20px;
+				}
+				</style>
+
+				Use of The class Attribute in JavaScript
+				The class name can also be used by JavaScript to perform certain tasks for specific elements.
+				JavaScript can access elements with a specific class name with the
+				<script> 
+				getElementsByClassName() method:
+				</script>
+
+
+
+				<script>
+				function myFunction() {
+				  var x = document.getElementsByClassName("city");
+				  for (var i = 0; i < x.length; i++) {
+				    x[i].style.display = "none";
+				  }
+				}
+				</script>
+
+
+
+
+				<button onclick="myFunction()">Hide elements</button>
+
+				<h2 class="city">London</h2>
+				<p>London is the capital of England.</p>
+
+				<h2 class="city">Paris</h2>
+				<p>Paris is the capital of France.</p>
+
+				<h2 class="city">Tokyo</h2>
+				<p>Tokyo is the capital of Japan.</p>
+
+				<script>
+				function myFunction() {
+				  var x = document.getElementsByClassName("city");
+				  for (var i = 0; i < x.length; i++) {
+				    x[i].style.display = "none";
+				  }
+				}
+				</script>
+				
+
+
+
+				id attribute
+
+				The HTML id attribute is used to specify a unique id for an HTML element.
+				You cannot have more than one element with the same id in an HTML document.
+
+				Using The id Attribute
+				The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.
+				The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+				The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.
+				In the following example we have an <h1> element that points to the id name "myHeader". This <h1> element will be styled according to the #myHeader style definition in the head section:
+
+				<style>
+				#myHeader {
+				  background-color: lightblue;
+				  color: black;
+				  padding: 40px;
+				  text-align: center;
+				}
+				</style>
+
+
+
+				Difference Between Class and ID
+				A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:
+
+
+				HTML Bookmarks with ID and Links
+				HTML bookmarks are used to allow readers to jump to specific parts of a webpage.
+				Bookmarks can be useful if your page is very long.
+				To use a bookmark, you must first create it, and then add a link to it.
+				Then, when the link is clicked, the page will scroll to the location with the bookmark.
+
+
+				Using The id Attribute in JavaScript
+				The id attribute can also be used by JavaScript to perform some tasks for that specific element.
+				JavaScript can access an element with a specific id with the getElementById() method:
+
+
+				<button onclick="displayResult()">Change text</button>
+				<script>
+				function displayResult() {
+				  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+				}
+				</script>
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+				HTML Iframe Syntax
+				The HTML <iframe> tag specifies an inline frame.
+				An inline frame is used to embed another document within the current HTML document.
+
+				<iframe src="url" title="description" height="200" width="300"></iframe>
+				Tip: It is a good practice to always include a title attribute for the <iframe>. This is used by screen readers to read out what the content of the iframe is.
+
+				Iframe - Remove the Border
+				By default, an iframe has a border around it.
+				To remove the border, add the style attribute and use the CSS border property:
+
+				<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+				style="border:2px solid red
+
+
+
+				Iframe - Target for a Link
+				An iframe can be used as the target frame for a link.
+				The target attribute of the link must refer to the name attribute of the iframe:
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------					java script
+				JavaScript makes HTML pages more dynamic and interactive.
+				<script>
+				<button type="button"
+				onclick="document.getElementById('demo').innerHTML = Date()">
+				Click me to display Date and Time.
+				</button>
+				</script>
+				<p id="demo"></p>
+
+				The HTML <script> Tag
+				The HTML <script> tag is used to define a client-side script (JavaScript).
+				The <script> element either contains script statements, or it points to a external script file through the src attribute.
+				Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+				To select an HTML element, JavaScript most often uses the document.getElementById() method.
+				</script>
+
+
+
+
+
+				JavaScript can change content:
+				<script>
+				document.getElementById("demo").innerHTML = "Hello JavaScript!";
+				</script>
+
+
+				JavaScript can change styles:
+
+				<p id="nemo"></p>
+
+				<script>
+				document.getElementById("nemo").style.fontSize = "25px";
+				document.getElementById("nemo").style.color = "red";
+				document.getElementById("nemo").style.backgroundColor = "yellow";
+				</script>				
+
+
+
+
+				Example
+				JavaScript can change attributes:
+
+				<h1>My First JavaScript</h1>
+				<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+				<script>
+				function light(sw) {
+				  var pic;
+				  if (sw == 0) {
+				    pic = "pic_bulboff.gif"
+				  } else {
+				    pic = "pic_bulbon.gif"
+				  }
+				  document.getElementById('myImage').src = pic;
+				}
+				</script>
+
+				<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+				<p>
+				<button type="button" onclick="light(1)">Light On</button>
+				<button type="button" onclick="light(0)">Light Off</button>
+				</p>
+
+
+
+
+				The HTML <noscript> Tag
+				The HTML <noscript> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support scripts:
+
+				<p id="demo"></p>
+				<script>
+				document.getElementById("demo").innerHTML = "Hello JavaScript!";
+				</script>
+				<noscript>Sorry, your browser does not support JavaScript!</noscript>
+				<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------				
+				HTML File Paths
+				A file path describes the location of a file in a web site's folder structure.
+
+				File Path Examples
+				Path								Description
+				<img src="picture.jpg">				The "picture.jpg" file is located in the same folder as the current page
+				<img src="images/picture.jpg">		The "picture.jpg" file is located in the images folder in the current folder
+				<img src="/images/picture.jpg">		The "picture.jpg" file is located in the images folder at the root of the current web
+				<img src="../picture.jpg">			The "picture.jpg" file is located in the folder one level up from the current folder
+
+
+				HTML File Paths
+				A file path describes the location of a file in a web site's folder structure.
+
+				File paths are used when linking to external files, like:
+
+				Web pages
+				Images
+				Style sheets
+				JavaScripts
+
+
+				Absolute File Paths
+				An absolute file path is the full URL to a file:
+				Example
+				<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+
+
+				Relative File Paths
+				A relative file path points to a file relative to the current page.
+				In the following example, the file path points to a file in the images folder located at the root of the current web:
+				Example
+				<img src="/images/picture.jpg" alt="Mountain">
+
+
+
+
+				In the following example, the file path points to a file in the images folder located in the current folder:
+
+				Example
+				<img src="images/picture.jpg" alt="Mountain">
+
+				In the following example, the file path points to a file in the images folder located in the folder one level up from the current folder:
+
+				Example
+				<img src="../images/picture.jpg" alt="Mountain">
+
+				Best Practice
+				It is best practice to use relative file paths (if possible).
+
+				When using relative file paths, your web pages will not be bound to your current base URL. All links will work on your own computer (localhost) as well as on your current public domain and your future public domains.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------				
+				HTML - The Head Element
+				The HTML <head> element is a container for the following elements: <title>, <style>, <meta>, <link>, <script>, and <base>.
+
+				The HTML <head> Element
+				The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.
+				HTML metadata is data about the HTML document. Metadata is not displayed.
+				Metadata typically define the document title, character set, styles, scripts, and other meta information.
+
+
+				The HTML <title> Element
+				The <title> element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.
+				The <title> element is required in HTML documents!
+				The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.
+
+				The <title> element:
+
+				defines a title in the browser toolbar
+				provides a title for the page when it is added to favorites
+				displays a title for the page in search engine-results
+				So, try to make the title as accurate and meaningful as possible!
+
+				 <title>A Meaningful Page Title</title>
+
+
+				 The HTML <style> Element
+				The <style> element is used to define style information for a single HTML page:
+
+
+
+				The HTML <link> Element
+				The <link> element defines the relationship between the current document and an external resource.
+
+				The <link> tag is most often used to link to external style sheets:
+
+				Example
+				<link rel="stylesheet" href="mystyle.css">
+
+
+
+				The HTML <meta> Element
+				The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.
+
+				The metadata will not be displayed on the page, but are used by browsers (how to display content or reload page), by search engines (keywords), and other web services.
+
+				Examples
+				Define the character set used:
+
+				<meta charset="UTF-8">
+				Define keywords for search engines:
+
+				<meta name="keywords" content="HTML, CSS, JavaScript">
+				Define a description of your web page:
+
+				<meta name="description" content="Free Web tutorials">
+				Define the author of a page:
+
+				<meta name="author" content="John Doe">
+				Refresh document every 30 seconds:
+
+				<meta http-equiv="refresh" content="30">
+				Setting the viewport to make your website look good on all devices:
+
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+				Setting The Viewport
+				The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.
+
+				You should include the following <meta> element in all your web pages:
+
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				This gives the browser instructions on how to control the page's dimensions and scaling.
+
+				The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+				The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+
+				Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:
+
+
+
+
+
+
+
+				The HTML <script> Element
+				The <script> element is used to define client-side JavaScripts.
+
+				The following JavaScript writes "Hello JavaScript!" into an HTML element with id="demo":
+
+
+
+
+
+				The HTML <base> Element
+				The <base> element specifies the base URL and/or target for all relative URLs in a page.
+
+				The <base> tag must have either an href or a target attribute present, or both.
+
+				There can only be one single <base> element in a document!
+
+				<base href="https://www.w3schools.com/" target="_blank">
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------				
+				HTML Layout Elements and Techniques
+				Websites often display content in multiple columns (like a magazine or a newspaper).
+				HTML Layout Elements
+				HTML has several semantic elements that define the different parts of a web page:
+
+				HTML5 Semantic Elements	
+				<header> - Defines a header for a document or a section
+				<nav> - Defines a set of navigation links
+				<section> - Defines a section in a document
+				<article> - Defines an independent, self-contained content
+				<aside> - Defines content aside from the content (like a sidebar)
+				<footer> - Defines a footer for a document or a section
+				<details> - Defines additional details that the user can open and close on demand
+				<summary> - Defines a heading for the <details> element
+
+
+
+
+				HTML Layout Techniques
+				There are four different techniques to create multicolumn layouts. Each technique has its pros and cons:
+
+				CSS framework
+				CSS float property
+				CSS flexbox
+				CSS grid
+
+
+
+
+				CSS Frameworks
+				If you want to create your layout fast, you can use a CSS framework, like W3.CSS or Bootstrap.
+
+
+
+
+				CSS Float Layout
+				It is common to do entire web layouts using the CSS float property. Float is easy to learn - you just need to remember how the float and clear properties work. Disadvantages: Floating elements are tied to the document flow, which may harm the flexibility. Learn more about float in our CSS Float and Clear chapter.
+
+
+
+
+				CSS Flexbox Layout
+				Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices.
+				Learn more about flexbox in our CSS Flexbox chapter.
+
+
+
+
+				CSS Grid Layout
+				The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+
+
+
+
+
+
+
+				HTML Responsive Web Design
+				Responsive web design is about creating web pages that look good on all devices!
+				A responsive web design will automatically adjust for different screen sizes and viewports.
+
+				What is Responsive Web Design?
+				Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):
+
+
+
+
+				Setting The Viewport
+				To create a responsive website, add the following <meta> tag to all your web pages:
+
+				Example
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+				Responsive Images
+				Responsive images are images that scale nicely to fit any browser size.
+
+				Using the width Property
+				If the CSS width property is set to 100%, the image will be responsive and scale up and down:
+
+
+				<img src="img_girl.jpg" style="width:100%;">
+				Notice that in the example above, the image can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property instead.
+
+
+
+				Using the max-width Property
+				If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:
+
+				<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+
+
+
+				Show Different Images Depending on Browser Width
+				The HTML <picture> element allows you to define different images for different browser window sizes.
+				Resize the browser window to see how the image below change depending on the width:
+
+
+				<picture>
+				  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+				  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+				  <source srcset="flowers.jpg">
+				  <img src="img_smallflower.jpg" alt="Flowers">
+				</picture>
+
+
+
+
+				Responsive Text Size
+				The text size can be set with a "vw" unit, which means the "viewport width".
+				That way the text size will follow the size of the browser window:
+
+				<h1 style="font-size:10vw">Hello World</h1>
+
+				Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
+
+
+
+
+
+				Media Queries
+				In addition to resize text and images, it is also common to use media queries in responsive web pages.
+				With media queries you can define completely different styles for different browser sizes.
+				Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stacked vertically on small screens:
+
+
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<style>
+				* {
+				  box-sizing: border-box;
+				}
+
+				.left {
+				  background-color: #2196F3;
+				  padding: 20px;
+				  float: left;
+				  width: 20%; /* The width is 20%, by default */
+				}
+
+				.main {
+				  background-color: #f1f1f1;
+				  padding: 20px;
+				  float: left;
+				  width: 60%; /* The width is 60%, by default */
+				}
+
+				.right {
+				  background-color: #4CAF50;
+				  padding: 20px;
+				  float: left;
+				  width: 20%; /* The width is 20%, by default */
+				}
+
+				/* Use a media query to add a break point at 800px: */
+				@media screen and (max-width: 800px) {
+				  .left, .main, .right {
+				    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+				  }
+				}
+				</style>
+
+
+
+
+
+
+
+				Responsive Web Design - Frameworks
+				All popular CSS Frameworks offer responsive design.
+				They are free, and easy to use.
+
+
+
+				W3.CSS
+				W3.CSS is a modern CSS framework with support for desktop, tablet, and mobile design by default.
+				W3.CSS is smaller and faster than similar CSS frameworks.
+				W3.CSS is designed to be a high quality alternative to Bootstrap.
+				W3.CSS is designed to be independent of jQuery or any other JavaScript library.
+
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+				<div class="w3-container w3-green">
+				  <h1>W3Schools Demo</h1> 
+				  <p>Resize this responsive page!</p> 
+				</div>
+
+				<div class="w3-row-padding">
+				  <div class="w3-third">
+				    <h2>London</h2>
+				    <p>London is the capital city of England.</p>
+				    <p>It is the most populous city in the United Kingdom,
+				    with a metropolitan area of over 13 million inhabitants.</p>
+				  </div>
+
+				  <div class="w3-third">
+				    <h2>Paris</h2>
+				    <p>Paris is the capital of France.</p> 
+				    <p>The Paris area is one of the largest population centers in Europe,
+				    with more than 12 million inhabitants.</p>
+				  </div>
+
+				  <div class="w3-third">
+				    <h2>Tokyo</h2>
+				    <p>Tokyo is the capital of Japan.</p>
+				    <p>It is the center of the Greater Tokyo Area,
+				    and the most populous metropolitan area in the world.</p>
+				  </div>
+				</div>
+
+
+
+
+				 <title>Bootstrap Example</title>
+				  <meta charset="utf-8">
+				  <meta name="viewport" content="width=device-width, initial-scale=1">
+				  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+				  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+				  <div class="container">
+				  <div class="jumbotron">
+				    <h1>My First Bootstrap Page</h1>
+				    <p>Resize this responsive page to see the effect!</p> 
+				  </div>
+				  <div class="row">
+				    <div class="col-sm-4">
+				      <h3>Column 1</h3>
+				      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+				    </div>
+				    <div class="col-sm-4">
+				      <h3>Column 2</h3>
+				      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+				    </div>
+				    <div class="col-sm-4">
+				      <h3>Column 3</h3>        
+				      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+				      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+				    </div>
+				  </div>
+				</div>
+
+				acsess elements by java 
+				<p id="Demo">This is paragraph 1.</p>
+				<p id="demo">This is paragraph 2.</p>
+
+				<script>
+				// Only paragraph 2 will be overwritten
+				document.getElementById("demo").innerHTML = "HELLO.";
+				</script>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------				
+				ch\\Character and emoji
+
+
+					w3chool.com
+
+
+					From ASCII to UTF-8
+					ASCII was the first character encoding standard. ASCII defined 128 different characters that could be used on the internet: numbers (0-9), English letters (A-Z), and some special characters like ! $ + - ( ) @ < > .
+
+					ISO-8859-1 was the default character set for HTML 4. This character set supported 256 different character codes. HTML 4 also supported UTF-8.
+
+					ANSI (Windows-1252) was the original Windows character set. ANSI is identical to ISO-8859-1, except that ANSI has 32 extra characters.
+
+					The HTML5 specification encourages web developers to use the UTF-8 character set, which covers almost all of the characters and symbols in the world!
+
+
+
+					The HTML charset Attribute
+					To display an HTML page correctly, a web browser must know the character set used in the page.
+
+					This is specified in the <meta> tag:
+
+					<meta charset="UTF-8">
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+					HTML Uniform Resource Locators
+					A URL is another word for a web address.
+					A URL can be composed of words (e.g. w3schools.com), or an Internet Protocol (IP) address (e.g. 192.68.20.50).
+					Most people enter the name when surfing, because names are easier to remember than numbers.
+					URL - Uniform Resource Locator
+					Web browsers request pages from web servers by using a URL.
+					A Uniform Resource Locator (URL) is used to address a document (or other data) on the web.
+					A web address like https://www.w3schools.com/html/default.asp follows these syntax rules:
+					scheme://prefix.domain:port/path/filename
+
+
+					Explanation:
+
+					scheme - defines the type of Internet service (most common is http or https)
+					prefix - defines a domain prefix (default for http is www)
+					domain - defines the Internet domain name (like w3schools.com)
+					port - defines the port number at the host (default for http is 80)
+					path - defines a path at the server (If omitted: the root directory of the site)
+					filename - defines the name of a document or resource.
+
+
+					Common URL Schemes
+					The table below lists some common schemes:
+
+					Scheme		Short for								Used for
+					http		HyperText Transfer Protocol				Common web pages. Not encrypted
+					https		Secure HyperText Transfer Protocol		Secure web pages. Encrypted
+					ftp			File Transfer Protocol					Downloading or uploading files
+					file	 											A file on your computer
+
+
+
+					URL Encoding
+					URLs can only be sent over the Internet using the ASCII character-set. If a URL contains characters outside the ASCII set, the URL has to be converted.\
+					URL encoding converts non-ASCII characters into a format that can be transmitted over the Internet.
+					URL encoding replaces non-ASCII characters with a "%" followed by hexadecimal digits.
+					URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign, or %20.
+
+
+
+					
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------				
+
+					HTML Forms
+					An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+
+					The <form> Element
+					The HTML <form> element is used to create an HTML form for user input:
+					The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+
+					The <input> Element
+					The HTML <input> element is the most used form element.
+					An <input> element can be displayed in many ways, depending on the type attribute.
+					Here are some examples:
+
+					Type	Description
+					<input type="text">	Displays a single-line text input field
+					<input type="radio">	Displays a radio button (for selecting one of many choices)
+					<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+					<input type="submit">	Displays a submit button (for submitting the form)
+					<input type="button">	Displays a clickable button
+
+
+					Text Fields
+					The <input type="text"> defines a single-line input field for text input.
+				<form>
+  					<label for="fname">First name:</label><br>
+  					<input type="text" id="fname" name="fname"><br>
+  					<label for="lname">Last name:</label><br>
+  					<input type="text" id="lname" name="lname">
+				</form>
+
+
+
+
+					The <label> Element
+					Notice the use of the <label> element in the example above.
+					The <label> tag defines a label for many form elements.
+					The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
+					The <label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+					The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+
+					
+
+					Radio Buttons
+					The <input type="radio"> defines a radio button.
+					Radio buttons let a user select ONE of a limited number of choices.
+
+
+					Checkboxes
+					The <input type="checkbox"> defines a checkbox.
+					Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+
+					The Submit Button
+					The <input type="submit"> defines a button for submitting the form data to a form-handler.
+					The form-handler is typically a file on the server with a script for processing input data.
+					The form-handler is specified in the form's action attribute.
+
+
+
+					The Name Attribute for <input>
+					Notice that each input field must have a name attribute to be submitted.
+					If the name attribute is omitted, the value of the input field will not be sent at all.
+
+
+					HTML Form Attributes
+
+					The Action Attribute
+					The <action></action> attribute defines the action to be performed when the form is submitted.
+					Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+					In the example below, the form data is sent to a file called "action_page.php". This file contains a server-side script that handles the form data:
+
+
+					The Target Attribute
+					The target attribute specifies where to display the response that is received after submitting the form.
+					The target attribute can have one of the following values:
+
+					Value			Description
+					_blank			The response is displayed in a new window or tab
+					_self			The response is displayed in the current window
+					_parent			The response is displayed in the parent frame
+					_top			The response is displayed in the full body of the window
+					framename		The response is displayed in a named iframe
+
+
+					The Method Attribute
+					The method attribute specifies the HTTP method to be used when submitting the form data.
+					The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+					The default HTTP method when submitting form data is GET.
+
+
+					Notes on GET:
+					Appends the form data to the URL, in name/value pairs
+					NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+					The length of a URL is limited (2048 characters)
+					Useful for form submissions where a user wants to bookmark the result
+					GET is good for non-secure data, like query strings in Google
+					
+
+					Notes on POST:
+					Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+					POST has no size limitations, and can be used to send large amounts of data.
+					Form submissions with POST cannot be bookmarked
+					Tip: Always use POST if the form data contains sensitive or personal information! 
+
+
+
+					The Autocomplete Attribute
+					The autocomplete attribute specifies whether a form should have autocomplete on or off.
+					When autocomplete is on, the browser automatically complete values based on values that the user has entered before.
+					<form action="/action_page.php" autocomplete="on">
+
+
+					The Novalidate Attribute
+					The novalidate attribute is a boolean attribute.
+					When present, it specifies that the form-data (input) should not be validated when submitted.
+					Example
+					A form with a novalidate attribute:
+					<form action="/action_page.php" novalidate>
+					
+
+					HTML Form Elements
+					This chapter describes all the different HTML form elements.
+
+					The HTML <form> Elements
+
+					The HTML <form> element can contain one or more of the following form elements:
+
+
+
+					<input>
+					Definition and Usage
+					The <input> tag specifies an input field where the user can enter data.
+
+					The <input> element is the most important form element.
+
+					The <input> element can be displayed in several ways, depending on the type attribute.
+
+					The different input types are as follows:
+
+					<input type="button">
+					<input type="checkbox">
+					<input type="color">
+					<input type="date">
+					<input type="datetime-local">
+					<input type="email">
+					<input type="file">
+					<input type="hidden">
+					<input type="image">
+					<input type="month">
+					<input type="number">
+					<input type="password">
+					<input type="radio">
+					<input type="range">
+					<input type="reset">
+					<input type="search">
+					<input type="submit">
+					<input type="tel">
+					<input type="text"> (default value)
+					<input type="time">
+					<input type="url">
+					<input type="week">
+					Look at the type attribute to see examples for each input type!
+
+
+
+
+					<label></label>
+					Definition and Usage
+					The <label> tag defines a label for several elements:
+
+					<input type="checkbox">
+					<input type="color">
+					<input type="date">
+					<input type="datetime-local">
+					<input type="email">
+					<input type="file">
+					<input type="month">
+					<input type="number">
+					<input type="password">
+					<input type="radio">
+					<input type="range">
+					<input type="search">
+					<input type="tel">
+					<input type="text">
+					<input type="time">
+					<input type="url">
+					<input type="week">
+					<meter>
+					<progress>
+					<select>
+					<textarea>
+					Proper use of labels with the elements above will benefit:
+
+					Screen reader users (will read out loud the label, when the user is focused on the element)
+					Users who have difficulty clicking on very small regions (such as checkboxes) - because when a user clicks the text within the <label> element, it toggles the input (this increases the hit area). 
+
+
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
