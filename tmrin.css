@@ -1,0 +1,267 @@
+
+body,ul,li{
+    direction: rtl;
+    /*با این کار فاصله پیش فرض صفحه سایت رو برمیدارم*/
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    /*با این روش عرض بادی رو کمتر میکنم*/
+    width: 1000px;
+    /*(با استفاده از این حالت میتوان یک عنصر را در وسط صفحه قرار داد)*/
+    margin: auto;
+}
+header
+{
+    background-image: url(../image/jadeh-gpg.jpg);
+    /*توسط این خاصیت ، مکان یک پس زمینه بر روی تگ اچ تی ام ال را می توانیم تعیین نماییم.*/
+    background-position: center;
+    /*توسط این خاصیت می توان تعیین کرد که تصویر تکرار شود یا نه و یا اینکه چگونه تکرار شود.*/
+    background-repeat:no-repeat;
+    /* (کانتاین سعی میکند تمام ابعاد تصویر را نمایش دهد) استفاده از مقدار */
+    /*استفاده از این مقدار(کاور) تمام کادر را میپوشاند*/
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px
+}
+
+header nav
+{
+    /*ba estefade az in ravesh balatarin qesmate background ro moshakhas mikonim*/
+    width: 100%;
+    background-color:rgba(0, 0, 0, .4);
+    height: 80px;
+}
+
+header nav ul{
+    width: 100%;
+    /*in ravesh matn hara dar kenar hamdige qarar mide*/
+    display: flex;
+    /*in ravesh noqte haye kenare list haro varmidare*/
+    list-style: none;
+    /*az in ravesh baraye avardane mohatava dar vasat estefade mishe*/
+    justify-content: center;
+}
+
+header nav ul li{
+ margin-left: 25px;
+ /*az in ravesh baraye payin avardane mohtava estefade mishe*/
+ line-height: 4;
+ border-left: 1px solid rgb(223, 217, 217);
+ padding-left: 15px;
+}
+
+header nav ul li:nth-child(4){
+    border: none;
+/*ba estefade az in ravesh bordere mohatvayi ro ke nemikhaym hazf mikonim*/
+}
+header nav ul li a{
+    /*in ravesh khate zire link haro az beyn mibare*/
+ text-decoration: none;
+
+ color: #fff;
+ font-size: 20px;
+}
+header nav ul li a:hover{
+    background-color: rgb(17, 17, 17);
+}
+header .content{ 
+    /*in ravesh baese shenavar shodane kode ma mishavad*/
+    position: absolute;
+    top: 17%;
+    left: 30%;
+    text-align: center;
+}
+header .content h2 {
+    font-size: 60px; 
+    color: #fff;
+}
+header .content p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(247, 247, 247);
+}
+/*srvices*/
+
+#cervise{
+    width: 100%;
+    background-color: rgb(238, 235, 235);
+    /*ba estefade az in ravesh fasele pishfarz ra pak kardam*/
+    padding: 100px 0;
+}
+
+#cervise .cervise-title {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(194, 190, 190) ;
+    padding-bottom: 50px;
+    
+}
+#cervise .cervise-title h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#cervise .cervise-title p{
+    margin-top: 30px;
+    /*ba estefade az in ravesh matnemoon jam va joor tar mishe*/
+    width: 900px;
+    /*ba estefade az in ravesh matn jaye monaseb tari qarar migire*/
+    margin: auto;
+    font-size: 20px;
+}
+#cervise .cervise-title p span{
+    color: green;
+}
+
+
+/*service2*/
+#cervise .service-content{
+    width: 100%;
+    display: flex;
+    /*ba etefade az  "spase-between" beyne mohtavaha fasele mizarim*/
+    justify-content: space-between;
+    background-color: rgb(235, 235, 235);
+}
+#cervise .service-content .servise-content-item{
+    background-color: rgb(235, 232, 232);
+    /*ba estefade az value "calc" mitavanim mohasebat ra anjam bedahim, dar in qesmat faseleyi beyne iten ha qarar dadim*/
+    width: calc(33.33% - 20px);
+    margin-top: 30px;
+    text-align: center;
+}
+#cervise .service-content .servise-content-item i{
+    font-size: 50px;
+    color: rgb(151, 140, 140);
+    
+}
+#cervise .service-content .servise-content-item h2{
+    font-weight: 600;
+    font-size: 25px;
+}
+#cervise .service-content .servise-content-item p{
+    margin-bottom: 80px;
+}
+
+#cervise .service-content .servise-content-item a{
+    color: rgb(247, 247, 247);
+    background-color: rgb(19, 185, 61) ;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+#cervise .service-content .servise-content-item a:hover{
+    background-color: rgb(4, 139, 38) ;
+}
+/*blog*/
+
+#blog{
+    width: 100%;
+    text-align: center;
+}
+#blog .title h2{
+    margin-top: 50px;
+    font-size: 30px;
+}
+#blog .blog{
+    width: 100%;
+    display: flex;
+    /*in ravesh mige age safhat ja nadasht bia baqgiye biar payin*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 70px auto;
+    margin-bottom: 10px;
+}
+#blog .blog .blog-items{
+    width: calc(50% - 20px);
+    padding-bottom: 70px;
+    
+}
+#blog .blog .blog-items img{
+    width: 400px;
+}
+
+
+#blog .blog .blog-items h3{
+    font-size: 20px;
+    
+}
+#blog .blog .blog-items p{
+    width: 300px;
+    margin: auto;
+    font-size: 20px ;
+    color: rgba(2, 0, 0, 0.8);
+}
+/*mesaagebox*/
+#message{
+    background-image: url(../image/jadeh-gpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-attachment: fixed;
+    position: relative;
+}
+#message .overlay{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .4);
+}
+#message .overlay p{
+    font-size:30px;
+    color: #fff;
+    text-align: center;
+    width: 900px;
+    margin: 120px auto;
+}
+/*footer*/
+
+footer{
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 70px 0;
+
+}
+footer .footer-title{
+    width: 100% ;
+    padding-bottom: 35px;
+}
+
+footer .footer-title h2{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+footer .footer-title p{
+    font-size: 18px;
+}
+footer .footer-social ul{
+    display: flex;
+    justify-content: center;
+}
+footer .footer-social ul li{
+    list-style: none;
+    font-size: 30px;
+    padding-left: 8px;
+}
+footer .footer-social ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
+}
+footer .footer-social ul li a:hover{
+    color: rgb(155, 150, 150);
+}
+.footer-copyright p{
+    border-top: 1px solid rgb(66, 65, 65);
+    font-size: 15px;
+    padding-top: 80px;
+    color: rgb(228, 218, 218);
+}
+
+
+
+

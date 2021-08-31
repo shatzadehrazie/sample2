@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    /*ba estefade az in ravesh ha mohtavaye morede nazaremoono miarim vasat*/
+    align-items: center;
+    /*ba in ravesh qesmate morede nazar ra vasat ovordam */
+    min-height: 100vh;
+
+    background-color: #232c23;
+}
+.valed{
+    position: relative;
+    /*ba in ravesh andaze tage valed ro moshakhas kardim*/
+    height: 500px;
+    width: 70px;
+    /*ba in ravesh range pas zamineye valed ro moshakhas kardim*/
+    background-color: #2b343b;
+    /*ba in ravesh samte rast ra moshakhas mikonim*/
+    box-shadow: 10px 0 0 #4187f6;
+    border-left: 10px solid #2b343b;
+    /*ba in ravesh menoye samte rast ra penhan kardim*/
+    overflow-x: hidden;
+    /*ba in ravesh meno aheste tar baz mishe*/
+    transition: width 0.5s;
+}
+.valed:hover{
+    /*ba in ravesh meno ra shenavar kardim*/
+    width: 300px;
+}
+.valed ul
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+.valed ul li
+{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.valed ul li.active:hover
+{
+    background-color: #4187f6;
+}
+
+.valed ul li a
+{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    display: flex;
+    color: #fff;
+}
+
+.valed ul li.active a::before
+{
+    content: '';
+    position: absolute;
+    /*ba in ravesh"border raiuse ra balatar bordim*/
+    
+    right: 0;
+    width: 30px;
+    height: 45px;
+    
+    
+    /*ba in ravesh bordere rast ra nim helal kardam*/
+    box-shadow: 15px 15px 0 #4187f6;
+}
+.valed ul li.active a::after
+{
+    content: '';
+    position: absolute;
+    /*ba in ravesh"border raiuse ra balatar bordim*/
+    right: 0;
+    width: 10px;
+    height: -30px;
+    box-shadow: 15px -15px 0 #4187f6;
+}
+.valed ul li a .icon
+{
+    position: relative;
+    display: block;
+    /*ba in ravesh arze icon hara bishtar kardam*/
+    min-width: 60px;
+    /*ba in ravesh toole icon hara bishtar kardam*/
+    height: 60px;
+    /*ba in ravesh toole khate icon hara bishtar mikonam "yani payin tar miyarameshoon"*/
+    line-height: 70px;
+    /*ba in ravesh icon hara vasat miyaram*/
+    text-align: center;
+}
+.valed ul li a .icon ion-icon
+{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 1;
+    
+}
+.valed ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+

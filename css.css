@@ -1,0 +1,81 @@
+/*google fonts poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /*vieowport height (vh) ertefaee namaye did ra moshakhas mikonad*/
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.product-card{
+    max-width: 335px;
+    width: 100%;
+    border-radius: 25px ;
+    padding: 20px 30px 30px 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
+    overflow: hidden;
+   
+}
+
+.product-card .logo-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.product-card .logo-cart img{
+     height: 25px;
+    object-fit: cover;
+}
+.product-card .logo-cart i{
+    font-size: 27px;
+    color: #707070;
+    cursor: pointer;
+    transition: color 0.3s ease
+    
+
+}
+.product-card .logo-cart i:hover{
+     color: #333;
+}
+
+.product-card .main-images img{
+     height: 300px;
+     width: 300px;
+     object-fit: cover;
+     transform: rotate(18deg);
+     left: 12px;
+     top: -40px;
+     z-index: -1;
+}
+.product-card .shoe-details .shoe-name{
+     font-size: 20px;
+     font-weight: 500;
+     color: #161616;
+}
+.product-card .shoe-details p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    text-align: justify;
+}
+.product-card .shoe-details .strars i{
+    margin: 0 --1px;
+    color: #333;
+
+}
+.product-card .color-price .color-option{
+    display: flex;
+    align-items: center;
+}
